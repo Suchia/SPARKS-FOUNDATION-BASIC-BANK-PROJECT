@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> KBC Basic Banking System</title>
+    <!-- Bootstrap CDN -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- AOS  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+
+  <body onload="loader()">
+    
+    
+    <!-- loader for splash screen -->
+    <div id="loading"></div>
+
+    <!--Navbar Starts Here-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">  <img
+          class="hero-img3"
+          src="assets/media/bank logo.png"
+          alt="img-showing-money-transfer"
+        />KBC Bank </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="nav navbar-nav navbar-right ml-auto">
+            <li>
+              <a class="nav-link active" aria-current="page" href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./customers.html">Customers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./transfer.html">Transfer Money</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar ends here  -->
+
+    <!-- here content starts here -->
+    <div class="container-fluid hero-content">
+     
+      <div class="main row align-items-center">
+        
+      
+        <div class="col-md-6 col-sm-12 text-center" data-aos="fade-up">
+         
+          <h1 class="section-title"
+          style="color: #0d11eb; font-weight: bolder; text-align: center"> 
+          KBC BANK</h1>
+          <h1>
+            Easy Way to
+            <span id="sp" class="font-weight-bold">Transfer Money</span>
+          </h1>
+          <p class="lead muted">
+            TRANSFER MONEY
+            <span id="sp" class="font-weight-bold">IN SECONDS</span>
+          </p>
+
+          <br />
+          <br />
+          <button
+            type="button"
+            class="btn btn-primary btn-lg"
+            onclick="location.href = './customers.html';"
+          >
+            Customer Details<img
+            class="hero-img2"
+            src="assets/media/user3.jpg"
+            alt="img-showing-money-transfer"
+          />
+          </button>
+          <button
+            type="button"
+            class="btn btn-primary btn-lg"
+            onclick="location.href = './transfer.html';"
+          >
+            Transfer Money<img
+            class="hero-img2"
+            src="assets/media/transfer.jpg"
+            alt="img-showing-money-transfer"
+          />
+          </button>
+        </div>
+        <div class="col-md-6 col-sm-12 text-center" data-aos="fade-left">
+          <div class="hero-img-div">
+            <img
+              class="hero-img"
+              src="assets/media/slider-icon.png"
+              alt="img-showing-money-transfer"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+  
+    </div>
+</div>
+</section>
+
+<section class="why-us">
+  <h1>Why choose KBC Bank?</h1>
+  <p
+    >We leverage open banking to turn your bank account into your
+    financial hub.<br />Control your finances like never before.</p
+  >
+</section>
+
+<section class="features-section">
+  <div class="feature-item">
+    <img src="assets/media/icon-online.svg" alt="" />
+    <h1>Online Banking</h1>
+    <p
+      >Our modern web and mobile<br />
+      applications allow you to keep<br />
+      track of your finances whereever<br />
+      you are in the world.</p
+    >
+  </div>
+  <div class="feature-item">
+    <img src="assets/media/icon-budgeting.svg" alt="" />
+    <h1>Simple Budgeting</h1>
+    <p
+      >See exactly where your money<br />
+      goes every month.Recieve<br />
+      notifications when you're close to<br />
+      hitting your limits./p >
+    </p></div
+  >
+
+  <div class="feature-item">
+    <img src="assets/media/icon-onboarding.svg" alt="" />
+    <h1>Fast Onboarding</h1>
+    <p
+      >We don't do branches.Open your<br />
+      accound minutes online and start<br />
+      taking controll of your finances<br />
+      right away.</p
+    >
+  </div>
+  <div class="feature-item">
+    <img src="assets/media/icon-api.svg" alt="" />
+    <h1>Open API</h1>
+    <p
+      > Manage your savings, investments,<br />
+      pension and much more from one<br />
+      account.Tracking your money has<br />
+      never been easier.</p
+    >
+  </div>
+</section>
+
+<!--=====Artical Start========-->
+<section class="blog-section">
+  <h1>Latest Articles</h1>
+  <div class="article-container">
+    <div class="article">
+      <img src="assets/media/image-currency.jpg" alt="" />
+      <div class="content">
+        <p>Arslan Jajja</p>
+        <h4
+          >Recieve money in any
+          currency with no fees.</h4
+        >
+        <p
+          >The world is getting smaller and<br />
+          we are becoming more mobile.So,<br />
+          why should you be forced to only<br />
+          recieve money in a single...</p
+        >
+      </div>
+    </div>
+    <div class="article">
+      <img src="assets/media/image-restaurant.jpg" alt="" />
+      <div class="content">
+        <p>Arslan Jajja</p>
+        <h4
+          >Treat Yourself Without 
+          Worrying about money</h4
+        >
+        <p
+          >Our simple budgeting feature<br />
+          allow to seperate out your<br />
+          spending and set realistic limits<br />
+          each month.That means you...</p
+        >
+      </div>
+    </div>
+    <div class="article">
+      <img src="assets/media/image-currency.jpg" alt="" />
+      <div class="content">
+        <p>Arslan Jajja</p>
+        <h4>Take Your Easybank card.whereever you go.</h4>
+        <p
+          >We want you to enjoy your travels.<br />This is why we don't
+          charge any<br />fees on purchase while you're <br />abroad.We'll
+          even show you...</p
+        >
+      </div>
+    </div>
+    <div class="article">
+      <img src="assets/media/image-confetti.jpg" alt="" />
+      <div class="content">
+        <p>Arslan Jajja</p>
+        <h4>Our invite-only Beta<br />accounts are live now!</h4>
+        <p
+          >After a lot of hardwork by the<br />
+          whole team,we're excited to launch<br />
+          our closed beta.It's easy to request <br />an invite through the
+          site.</p
+          >
+      </div>
+    </div>
+  </div>
+</section>
+<!--======== Artical End==========-->
+    <!--===== ABOUT =====-->
+    <section class="about section" id="about">
+      <h2
+        class="section-title"
+        style="color: hsl(233, 26%, 24%);; font-weight: bolde; font-size: 45px; text-align: center"
+        
+      >
+        About
+      </h2>
+
+      <div class="about__container bd-grid">
+        <div class="about__img">
+          <img
+            src="assets/media/transferMoney.png"
+            alt=""
+            style="
+              width: 550px;
+              height: 350px;
+              border-radius: 14%;
+              margin-left: 200px;
+              display: inline-block;
+              vertical-align: middle;
+              float: left;"
+      
+          />
+        </div>
+        <div>
+          <h3
+            class="about__subtitle"
+            style="margin-left: 700px; margin-top: 50px;  font-weight: bolder; color: crimson;"
+          >
+            Welcome to KBC Bank
+          </h3>
+          
+          <p class="about__text" style="margin-left: 700px"  >Always here for Service!</p>
+
+          <p class="about__text" style="margin-left: 700px">
+            We provide loans, accept deposits and best results!
+            </p>
+          <p class="about__text" style="margin-left: 700px">EASY TRANSACTION IN ONE STEP!</p>
+        </div>
+      </div>
+    </section>
+<!-- customer Review start -->
+    <!------------------------test imonials555555555555-------->
+    <section class="testimonials">
+            
+      <h1>
+          What Our Customers Sayes...???
+      </h1>
+    
+      <div class="row">
+           <div class="testimonials-col">
+              <img src="assets/media/user1.jpg">
+                  <div>
+               <p>
+                Very good customer service at this location every time I have been there, however,
+                 expect to spend 15 minutes in line most of the time. It’s a very busy location during most 
+                hours of the day; even before opening there is typically a line waiting outside. 
+               </p>
+               <h3>
+                  Christine Berkley
+               </h3>
+               <i class="fa fa-star" ></i>
+               <i class="fa fa-star" ></i>
+               <i class="fa fa-star" ></i>
+               <i class="fa fa-star" ></i>
+               <i class="fa fa-star-o" ></i>
+          </div>
+          
+
+       </div>
+         <div class="testimonials-col">
+           <img src="assets/media/user2.jpg">
+              <div>
+                  <p>
+                    This bank has an awesome team and a dedicated staff.
+                     I am very impressed by their vision, hard work, outstanding performance,online Banking Service is good,
+                     and wonferful team-mates. Their reputation is well-earned.
+                  </p>
+                  <h3>
+                  David Bayer
+                  </h3>
+                  <i class="fa fa-star" ></i>
+               <i class="fa fa-star" ></i>
+               <i class="fa fa-star" ></i>
+               <i class="fa fa-star" ></i>
+               <i class="fa fa-star-half-o" ></i>
+          </div>
+          
+      </div>
+
+  </section>
+
+  <!-- customer Review end -->
+    <!-- Footer -->
+    <footer
+      class="bg-light text-center text-lg-start"
+      style="margin-top: 300px"
+      margin-top="20px"
+    >
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div
+        class="text-center p-3"
+        style="background-color: rgb(195, 211, 238)"
+      >
+        © 2021 Copyright:
+        <p class="love">
+          Made with <i class="fa fa-heart pulse"></i> by KBC Bank
+        </p>
+      </div>
+
+
+      <!-- Copyright -->
+    </footer>
+
+    <!-- spalsh screen js -->
+    <script>
+      var preloader = document.getElementById("loading");
+      function loader() {
+        preloader.style.display = "none";
+      }
+    </script>
+
+    <script src="assets/js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"></script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"></script>
+
+    <!-- aos data  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({ 
+        duration: 700,
+      });
+    </script>
+  </body>
+</html>
